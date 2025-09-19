@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 7 - Generador de Contraseñas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f7fb;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    input {
+      width: 90%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      background: black;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    #resultado {
+      margin-top: 15px;
+      font-weight: bold;
+      word-wrap: break-word;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Generador de Contraseñas</h1>
+    <input type="number" id="longitud" placeholder="Longitud de la contraseña">
+    <button id="generar">Generar contraseña</button>
+    <p id="resultado"></p>
+  </div>
+
+  <script src="/js/E7.js"></script>
+</body>
+</html>
